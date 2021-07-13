@@ -2,17 +2,17 @@
   "name": "vscode-nodejs-template",
   "dockerFile": "Dockerfile",
   "shutdownAction": "none",
-  "appPort": "3500:3000",
+  "appPort": "3501:3000",
   "extensions": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "octref.vetur",
     "eamodio.gitlens",
-    "donjayamanne.githistory"
+    "mhutchie.git-graph"
   ],
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "editor.formatOnSave": false,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
@@ -20,9 +20,8 @@
       "source.fixAll.eslint": true
     },
     "vetur.format.defaultFormatter.js": "none",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.formatOnSave": true,
       "editor.tabSize": 2
     },
     "[jsonc]": {
